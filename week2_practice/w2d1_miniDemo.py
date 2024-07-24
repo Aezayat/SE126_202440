@@ -11,7 +11,7 @@ with open("week2_practice\se126_base_info.csv") as csvfile:
 
     for record in file:
         
-        print(f"{record[0]:10}, {record [2]:4}")
+        print(f"{record[0]:10}, {record[2]:4}")
         sum_age += int(record[2])
         total_records += 1
 
