@@ -5,7 +5,7 @@ import csv
 total_records = 0
 sum_age = 0
 
-with open("week2_practice/se126_base_info.csv") as csvfile: 
+with open("week2_practice\se126_base_info.csv") as csvfile:  
 
     file = csv.reader(csvfile)
 
