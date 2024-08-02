@@ -37,16 +37,7 @@ for i in range(0, records):
     #i --> index
 
     #if my name is found in a certain record
-    print(f"{names[i]}'s favorite anime is the {animals[i]}.")
+    print(f"{names[i]}'s favorite animal is the {animals[i]}.")
 
 for i in range(0, len(names)):
-    print(f"{names[i]}'s favorite anime is the {colors[1].upper()}.")
-
-#Don't do for 1D list-------------------- ? (what's under)
-i = 0
-for value in ages:
-    
-    print(f"{names[value]}'s favorite anime is the {animals[value]}.")
-    i += 1
-
-    
+    print(f"{names[i]}'s favorite color is the {colors[i].upper()}.")
