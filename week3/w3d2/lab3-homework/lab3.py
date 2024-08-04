@@ -14,7 +14,7 @@
 #age
 #not_eligible_count
 #voter_eligible_count
-#eligible_to_vote_but_did_not
+#eligible_did_not
 #vote_count
 
 #----MAIN CODE--------------------------------------------
@@ -26,7 +26,7 @@ age = 0
 not_eligible_count = 0
 voter_eligible_count = 0
 not_registered_count = 0
-eligible_to_vote_but_did_not = 0
+eligible_did_not = 0
 vote_count = 0
 
 #--empty lists---------------
@@ -64,7 +64,7 @@ with open("week3/w3d2/lab3-homework/voters_202040.csv") as csvfile:
 
         if rec[2] =="Y" and rec[3] == "N": # Checks to see if voter is eligible to vote, and if they did vote. Then keeps track of result
             registered_votedN.append("Registered to vote but did not")
-            eligible_to_vote_but_did_not += 1 
+            eligible_did_not += 1 
 
 
         if rec[2] == "Y" and rec[3] == "Y": #Checks how many voters are registered and did vote. Then keeps track of result
@@ -80,6 +80,6 @@ with open("week3/w3d2/lab3-homework/voters_202040.csv") as csvfile:
 
 print(f"Number of not eligible voters: {not_eligible_count}")
 print(f"Number of voters eligble that did not vote: {not_registered_count}")
-print(f"Number of voters eligible, but did not vote: {eligible_to_vote_but_did_not}")
+print(f"Number of voters eligible, but did not vote: {eligible_did_not}")
 print(f"Number of total voters: {vote_count}")
 print(f"Total number of records processed: {records}")
