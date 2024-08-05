@@ -28,10 +28,10 @@ with open ("week4/listPractice1.csv") as csvfile:
 #Disconnected to file-----------------------------------------
 
 
-print(f"{"FIRST":10}\t{"LAST":10}\t{"T#1":3}\t{"T#2":3}\t{"T#3":3}\t{"T#1":3}\t{"T#2":3}\t{"T#3":3}\t{"AVG.":5}\t{"LETTER":3}")
+print(f"{"FIRST":10}\t{"LAST":10}\t{"T#1":3}\t{"T#2":3}\t{"T#3":3}\t{"T#1":3}\t{"T#2":3}\t{"T#3":3}")
 #process list ..> FOR LOOP!
 for i in range(0,len(firstNames)):
-    print(f"{firstNames[i]:10}\t{lastNames[i]:10}\t{test1[i]:3}\t{test2[i]:3}\t{test3[i]:3}\t{numAvg[i]:5.1f}\t{letAvg[i]:3}")
+    print(f"{firstNames[i]:10}\t{lastNames[i]:10}\t{test1[i]:3}\t{test2[i]:3}\t{test3[i]:3}")
 print("--------------------------------------------------------")
 
 #process lists to find numeric and letter grade equivalent for each student
@@ -56,6 +56,12 @@ for i in range(0, len(firstNames)):
     #adding num and let avg to respective lists; these remain PARALLEL with starting data
     numAvg.append(avg)
     letAvg.append(letter)
+
+print(f"{"FIRST":10}\t{"LAST":10}\t{"T#1":3}\t{"T#2":3}\t{"T#3":3}\t{"T#1":3}\t{"T#2":3}\t{"T#3":3}\t{"AVG.":5}\t{"LETTER":3}")
+#process list ..> FOR LOOP!
+for i in range(0,len(firstNames)):
+    print(f"{firstNames[i]:10}\t{lastNames[i]:10}\t{test1[i]:3}\t{test2[i]:3}\t{test3[i]:3}\t{numAvg[i]:5.1f}\t{letAvg[i]:3}")
+print("--------------------------------------------------------")
 #process lists to find the numAVg
 gradeTotal = 0
 
