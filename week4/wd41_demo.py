@@ -1,4 +1,10 @@
+#Alex Zayat    8/5/24
 #W4D1 - 1D parallel list review + making new lists and starts to seq. search
+
+#Variable Dictionary
+#gradeTotal
+#classAvg
+#avg
 
 import csv
 #create empty lists - one for EACH potentional field
