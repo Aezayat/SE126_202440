@@ -1,3 +1,9 @@
+#Alex Zayat
+#Program Explanation: This program helps the user find vehicles they may be interested in based on user inputs. After showing results, the program allows the user to enter more inputs or exit the program
+
+
+
+
 import csv
 record = 0
 records = 0
@@ -28,28 +34,39 @@ with open("w5_midterm/vehicles.csv") as csvfile:
         record += 1
 
 
+print("\tNew Car Finder Assistant")
 
-answer = "y"  # Assuming you want the loop to start by checking for user input
+answer = "y"  # Loop by checking for user input
 
 while answer == "y":
     # Ask the user for transmission type
-    answer = input("Are you looking for an Automatic or Manual? ").lower()
+    answer = input("\nAre you looking for an Automatic or Manual? ").lower()
 
     # Ask the user for vehicle type
     response = input("Are you looking for a Sedan or SUV? ").lower()
 
     # Check conditions for Automatic and Sedan
-
     if answer.lower() == "automatic" and response.lower() == "sedan":
         for index in range(0, 2):
 
             print(f"{modelYear[index]:<5}\t{manufacturer[index]:<10}\t{model[index]:<10}\t${price[index]:>5}") 
+
+
+    #Check conditions for Manual and Sedan
     elif answer.lower() == "manual" and response.lower() == "sedan":
         for index in range(2, 4):
             print(f"{modelYear[index]:<5}\t{manufacturer[index]:<10}\t{model[index]:<10}\t${price[index]:>5}")
 
+
+    #Check conditions for Automatic and SUV
     elif answer.lower() == "automatic" and response.lower() == "suv":
         for index in range(4, 6):
              print(f"{modelYear[index]:<5}\t{manufacturer[index]:<10}\t{model[index]:<10}\t${price[index]:>5}")
+
+    else:
+        print("Vehicle Not Available")
     
             
+    # Ask the user if they want to continue
+    answer = input("Do you want to continue? (y/n): ")
+
