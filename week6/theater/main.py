@@ -1,3 +1,11 @@
+#Alex Zayat 8/28/24
+#Program : Create a seating chart, 15 rows of seats with 30 seats in each row. he program should display a screen that shows which seats are available and which are taken. Seats thar are available arerepresented by # and seats that are taken are represent by a *
+#Variable Dictionary
+#seats
+#alphabet
+#seating_arrangement 
+
+
 def show_seating_chart(seating_arrangement):
     print("    A B C D E F G H   J K L M N O P Q R S T U V   X Y Z AA AB AC AD AE AF")
     for row_number, row in enumerate(seating_arrangement):
